@@ -1,0 +1,17 @@
+.button {
+    min-width: 130px;
+    min-height: 40px;
+    background: #4285F4;
+    border-radius: 5px;
+    color: white;
+    font-family: Raleway;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    border: 0;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #286ce2;
+}
