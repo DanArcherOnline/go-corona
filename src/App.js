@@ -1,26 +1,12 @@
 import './App.css';
-import Button from './components/base/button/button.component';
+import NavBar from './components/domain/landing/navbar/navbar.component';
 
 function App() {
   return (
     <div>
       <div className="landing-section">
         {/* TODO make navbar component */}
-        <nav className="top-nav">
-          <ul>
-            <img className="logo" src={process.env.PUBLIC_URL + '/logo.svg'} alt="corona go logo" />
-            <div className="menu-items">
-              <div className="menu-page-items">
-                {/* TODO add href links*/}
-                <a>Home</a>
-                <a>Features</a>
-                <a>Support</a>
-                <a>Contact Us</a>
-              </div>
-              <Button href="http://google.com">Download</Button>
-            </div>
-          </ul>
-        </nav>
+        <NavBar />
         {/* TODO rename class name*/}
         <div className="mid-section2">
           <div className="mid-section">
