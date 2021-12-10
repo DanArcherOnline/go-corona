@@ -4,6 +4,8 @@ import styles from './navbar.module.css';
 
 
 const NavBar = () => {
+    const downloadHandler = () => window.open('http://www.google.com', '_blank');
+
     return (
         <nav className={styles.topNav}>
             <ul>
@@ -16,7 +18,7 @@ const NavBar = () => {
                         <a href="http://google.com">Support</a>
                         <a href="http://google.com">Contact Us</a>
                     </div>
-                    <Button href="http://google.com">Download</Button>
+                    <Button color="blue" onClick={downloadHandler}>Download</Button>
                 </div>
             </ul>
         </nav>

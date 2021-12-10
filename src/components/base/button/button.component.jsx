@@ -4,10 +4,12 @@ import styles from './button.module.css';
 
 const Button = (props) => {
     return (
-        <form action="https://google.com">
-            <button className={styles.button} href={props.href} {...props} >{props.children}</button>
-        </form>
-
+        <button
+            className={`${styles.button} ${styles[props.color] ?? styles['red']}`}
+            onClick={props.onClick}
+        >
+            {props.children}
+        </button >
     );
 }
 

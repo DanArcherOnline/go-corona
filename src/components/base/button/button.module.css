@@ -1,7 +1,6 @@
 .button {
     min-width: 130px;
     min-height: 40px;
-    background: #4285F4;
     border-radius: 5px;
     color: white;
     font-family: Raleway;
@@ -12,6 +11,17 @@
     cursor: pointer;
 }
 
-.button:hover {
+.blue {
+    background: #4285F4;
+}
+.blue:hover {
     background: #286ce2;
+}
+
+.red {
+    background: #EC5863;
+}
+
+.red:hover {
+    background: #c23b44;
 }

@@ -1,0 +1,31 @@
+.ctaBlock {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 70px;
+}
+
+.ctaBlock h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 126%;
+    color: #000000;
+    margin: 12px 0;
+}
+
+.ctaBlock p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 138.5%;
+    letter-spacing: 0.08em;
+    color: #616161;
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+.ctaBlock Button {
+    margin-top: 24px;
+}
