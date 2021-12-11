@@ -46,7 +46,11 @@
 }
 .menuPageItems a {
     color: rgba(0, 0, 0, 1);
+    font-weight: 700;
     text-decoration: none;
+}
+.menuPageItems a:hover {
+    color: rgba(236, 88, 99, 1);
 }
 
 .menuItems a {
