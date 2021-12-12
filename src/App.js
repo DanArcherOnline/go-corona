@@ -1,6 +1,7 @@
 import './App.css';
 import CTABlock from './components/base/cta-block/cta-block.component';
 import NavBar from './components/domain/landing/navbar/navbar.component';
+import ViewVideoGroup from './components/domain/landing/view-video-group/view-video-group.component';
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
   return (
     <div>
       <div className="landing-section">
+        <div className='redBox' />
         <NavBar />
         <div className="landing-content">
           <div className="mid-section">
@@ -21,19 +23,12 @@ function App() {
             <img src={process.env.PUBLIC_URL + '/doctor-patient-img.svg'} alt="patient and doctor" />
           </div>
         </div>
-        {/* TODO make PlayVideoCTA component */}
-        <div className="watch-video-item">
-          <div className="watch-video">
-            {/* TODO make PlayVideoIcon component */}
-            <img src={process.env.PUBLIC_URL + '/play-video-icon.svg'} alt="play video icon" />
-            <div className="watch-video-text-container">
-              <p>Stay safe with GoCorona</p>
-              <p>Watch Video</p>
-            </div>
-          </div>
+        <div className="watchVideoItem">
+          <ViewVideoGroup />
         </div>
       </div>
-    </div >
+    </div>
+
   );
 }
 

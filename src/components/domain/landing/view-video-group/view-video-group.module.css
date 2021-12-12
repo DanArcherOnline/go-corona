@@ -1,0 +1,34 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.watchVideo {
+    display: inline-flex;
+    flex-flow: row;
+    margin-left: 70px;
+    margin-bottom: 48px;
+}
+
+.watchVideoTextContainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+.watchVideoTextContainer p:first-child {
+    font-size: 13px;
+    line-height: 126%;
+    letter-spacing: 0.08em;
+    color: #B0B0B0;
+    margin-bottom: 5px;
+}
+
+.watchVideoTextContainer  p:last-child {
+    font-size: 9px;
+    line-height: 126%;
+    letter-spacing: 0.165em;
+    text-transform: uppercase;
+    color: #000000;
+}

@@ -29,7 +29,6 @@
 
 .menuItems {
     display: flex;
-    width: 55%;
     justify-content: space-between;
     align-items: center;    
 }
@@ -45,18 +44,30 @@
     letter-spacing: 0.14em;
 }
 .menuPageItems a {
+    line-height: 40px;
     color: rgba(0, 0, 0, 1);
     font-weight: 700;
     text-decoration: none;
+    vertical-align: middle;
+    margin: 0 20px;
 }
+
+.menuPageItems a:last-child {
+    margin-right: 38px;
+}
+
+
 .menuPageItems a:hover {
     color: rgba(236, 88, 99, 1);
 }
 
-.menuItems a {
-    margin: 0 20px;
-}
-
 .topNav button {
     margin-right: 43px;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 25vw;
 }

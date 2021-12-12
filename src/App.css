@@ -2,6 +2,7 @@
     font-family: rubik;
 }
 
+
 .landing-section {
     display: flex;
     flex-flow: column;
@@ -9,7 +10,6 @@
     /* TODO  remove all debuggin background-colors*/
     /* background-color: red; */
     height: 100vh;
-    background-image: url("./images/red-round-corner-box.svg");
     background-position: right;
     background-size: contain;
 }
@@ -40,40 +40,20 @@
 
 
 
-.watch-video-item {
+.watchVideoItem {
     position: absolute;
     bottom: 0;
 }
 
-
-.watch-video {
-    /* background-color: mediumspringgreen; */
-    display: inline-flex;
-    flex-flow: row;
-    margin-left: 70px;
-    margin-bottom: 48px;
-}
-
-.watch-video-text-container {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    margin-left: 12px;
-}
-
-.watch-video-text-container p:first-child {
-    font-size: 13px;
-    line-height: 126%;
-    letter-spacing: 0.08em;
-    color: #B0B0B0;
-    margin-bottom: 5px;
-}
-
-.watch-video-text-container  p:last-child {
-    font-size: 9px;
-    line-height: 126%;
-    letter-spacing: 0.165em;
-    text-transform: uppercase;
-    color: #000000;
+.redBox {
+    background-color: #EC5863;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 25%;
+    z-index: -1;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
