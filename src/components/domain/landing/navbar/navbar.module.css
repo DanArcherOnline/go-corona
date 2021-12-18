@@ -1,3 +1,7 @@
+.menuButton {
+    display: none;
+}
+
 .topNav {
     font-family: rubik;
     display: flex;
@@ -6,13 +10,6 @@
     justify-content: flex-end;
     z-index: 100;
 }
-
-.topNav ul {
-    margin: 0;
-    padding: 0;
-}
-
-
 
 .logo {
     margin-left: 52px;
@@ -23,7 +20,9 @@
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
+  margin: 0;
   margin-top: 37px;
+  padding: 0;
   justify-content: space-between;
 }
 
@@ -38,12 +37,12 @@
     display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
-    font-family: Raleway;
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 0.14em;
 }
 .menuPageItems a {
+    font-family: Raleway;
     line-height: 40px;
     color: rgba(0, 0, 0, 1);
     font-weight: 700;
@@ -70,4 +69,35 @@
     flex-direction: row;
     justify-content: end;
     width: 25vw;
+}
+
+.menuButtons {
+    justify-self: start;
+    margin: 0;
+}
+
+@media only screen and (max-width: 860px) {
+    .menuItems {
+        display: none;
+    }
+
+    .topNav ul {
+        justify-content: center;
+        margin-top: 16px;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .menuButton {
+        display: inline-block;
+        height: 22px;
+        width: 29px;
+        margin: 9px auto; /*9px = navbar height - menu icon height / 2*/
+        position: absolute;
+        left: 16px;
+        vertical-align: middle;
+    }
+    
 }

@@ -6,8 +6,6 @@ p {
 .watchVideo {
     display: inline-flex;
     flex-flow: row;
-    margin-left: 70px;
-    margin-bottom: 48px;
 }
 
 .watchVideoTextContainer {
@@ -25,7 +23,7 @@ p {
     margin-bottom: 5px;
 }
 
-.watchVideoTextContainer  p:last-child {
+.watchVideoTextContainer p:last-child {
     font-size: 9px;
     line-height: 126%;
     letter-spacing: 0.165em;

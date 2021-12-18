@@ -2,58 +2,6 @@
     font-family: rubik;
 }
 
-
-.landing-section {
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    /* TODO  remove all debuggin background-colors*/
-    /* background-color: red; */
-    height: 100vh;
-    background-position: right;
-    background-size: contain;
+body {
+  min-width: 250px;
 }
-
-
-.landing-content {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    height: 100%;
-}
-
-.mid-section {
-    /* background-color: yellow; */
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    padding-bottom: 77px; /*70px = navbar + top margin*/
-}
-
-
-.mid-section img {
-    display: flex;
-    margin-right: 52px;
-    /* background-color: aquamarine; */
-    width: calc(50% + 25px)
-}
-
-
-
-.watchVideoItem {
-    position: absolute;
-    bottom: 0;
-}
-
-.redBox {
-    background-color: #EC5863;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 25%;
-    z-index: -1;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-

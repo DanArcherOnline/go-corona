@@ -9,6 +9,7 @@ const NavBar = () => {
     return (
         <nav className={styles.topNav}>
             <ul>
+                <img className={styles.menuButton} src={process.env.PUBLIC_URL + '/menu-icon.svg'} alt="menu button" />
                 <img className={styles.logo} src={process.env.PUBLIC_URL + '/logo.svg'} alt="corona go logo" />
                 <div className={styles.menuItems}>
                     <div className={styles.menuPageItems}>

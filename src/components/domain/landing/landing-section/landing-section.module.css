@@ -1,0 +1,88 @@
+.landingSection {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    height: 100%;
+    min-height: 100vh;
+    background-size: contain;
+    background-position: right;
+    background-color: #FAFBFD;
+    /* background-image: url('../../../../images/red-round-corner-box.svg'); */
+}
+
+.redBox {
+    background-color: #EC5863;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 22%;
+    min-height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.landingContent {
+    margin: auto 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.midSection {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+
+.doctorPatientImg {
+    display: flex;
+    margin-right: 52px;
+    width: 44%;
+    z-index: 1;
+}
+
+.watchVideoItem {
+    margin-left: 70px;
+    margin-bottom: 48px;
+}
+
+
+
+@media only screen and (max-width: 860px) {
+
+  .redBox, .watchVideoItem {
+    display: none;
+  }
+
+  .landingSection {
+    height: auto;
+    padding: 0 16px;
+  }
+
+  .landingContent {
+    justify-content: start;
+    height: auto;
+    margin-top: 36px;
+}
+
+  .midSection {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 42px;
+    flex-wrap: nowrap;
+  }
+
+  .midSection div {
+    margin: auto;
+    width: 100%;
+  }
+
+  .doctorPatientImg {
+    margin: auto;
+    margin-bottom: 25px;
+    width: 84%;
+    order: -1;
+  }
+}

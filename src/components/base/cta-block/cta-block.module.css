@@ -2,8 +2,16 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: flex-start;
+    
     margin-left: 70px;
+}
+
+.ctaBlock.left {
+    align-items: flex-start;
+}
+
+.ctaBlock.center {
+    align-items: center;
 }
 
 .ctaBlock h1 {
@@ -15,6 +23,8 @@
     margin: 12px 0;
 }
 
+
+
 .ctaBlock p {
     font-style: normal;
     font-weight: normal;
@@ -24,6 +34,14 @@
     color: #616161;
     margin: 0;
     white-space: pre-wrap;
+}
+
+.ctaBlock.left h1, .ctaBlock.left p {
+    text-align: start;
+}
+
+.ctaBlock.center h1, .ctaBlock.center p {
+    text-align: center;
 }
 
 .ctaBlock Button {
