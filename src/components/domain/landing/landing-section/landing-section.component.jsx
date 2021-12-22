@@ -1,5 +1,6 @@
 import { useMediaQuery } from 'react-responsive';
 import CTABlock from '../../../base/cta-block/cta-block.component';
+import PlayVideoButton from '../../../base/play-video-button/play-video-button.component';
 import NavBar from '../navbar/navbar.component';
 import ViewVideoGroup from '../view-video-group/view-video-group.component';
 import styles from './landing-section.module.css';
@@ -26,12 +27,13 @@ function LandingSection() {
                             buttonText="Get Started"
                             onClickButton={getStartedHandler}
                         />
-                        <img
-                            className={styles.doctorPatientImg}
-                            src={process.env.PUBLIC_URL + '/doctor-patient-img.svg'}
-                            alt="patient and doctor"
-
-                        />
+                        <div className={styles.doctorPatient}>
+                            <PlayVideoButton fillStyle='fill' className={styles.playButton} />
+                            <img
+                                src={process.env.PUBLIC_URL + '/doctor-patient-img.svg'}
+                                alt="patient and doctor"
+                            />
+                        </div>
                     </div>
 
                 </div>

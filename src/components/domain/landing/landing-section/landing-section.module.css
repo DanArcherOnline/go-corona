@@ -36,11 +36,23 @@
 }
 
 
-.doctorPatientImg {
+.doctorPatient {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 52px;
-    width: 44%;
+    min-width: 44%;
     z-index: 1;
+    
+}
+
+.doctorPatient img {
+  width: 100%;
+}
+
+.playButton {
+  display: none;
+  position: absolute;
 }
 
 .watchVideoItem {
@@ -54,6 +66,11 @@
 
   .redBox, .watchVideoItem {
     display: none;
+  }
+
+  .playButton {
+    display: block;
+    position: absolute;
   }
 
   .landingSection {
@@ -79,7 +96,7 @@
     width: 100%;
   }
 
-  .doctorPatientImg {
+  .doctorPatient {
     margin: auto;
     margin-bottom: 25px;
     width: 84%;

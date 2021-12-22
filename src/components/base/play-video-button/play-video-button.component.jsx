@@ -8,7 +8,13 @@ const PlayVideoButton = (props) => {
     }
 
     return (
-        <img with="44px" height="44px" src={fillStyleToPaths[props.fillStyle] ?? fillStyleToPaths['outline']} alt="play video icon" />
+        <img
+            with="44px"
+            height="44px"
+            src={fillStyleToPaths[props.fillStyle] ?? fillStyleToPaths['outline']}
+            alt="play video icon"
+            {...props}
+        />
     );
 }
 
